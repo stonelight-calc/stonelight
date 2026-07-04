@@ -430,9 +430,10 @@ function App(){
               <div style={{width:48,height:26,borderRadius:13,background:rozchep?"#2563a8":"#d1d5db",position:"relative",cursor:"pointer"}} onClick={()=>setRozchep(v=>!v)}>
                 <div style={{position:"absolute",top:3,left:rozchep?23:3,width:20,height:20,borderRadius:"50%",background:"#fff",transition:"left 0.2s"}} />
               </div>
-              <span style={{fontSize:14,fontWeight:600,color:"#374151"}}>Розчеп</span>
-              <span style={{fontSize:13,color:"#6b7280"}}>{rozchep?"Так":"Ні"}</span>
-              {rozchep&&<span style={{fontSize:12,color:"#2563a8",background:"#eff6ff",borderRadius:6,padding:"4px 10px"}}>+2 000 грн у тексті</span>}
+              <span style={{fontWeight:600,fontSize:13,color:"#374151",flex:1}}>Розчеп</span>
+                <span style={{fontSize:12,color:"#6b7280"}}>{rozchep?"Так":"Ні"}</span>
+              </div>
+              {rozchep&&(<div style={{fontSize:11,color:"#9ca3af",marginTop:6}}>У відповідь «Газобетон з доставкою» додасться примітка про +2000 грн за розчеп.</div>)}
             </div>
           </div>
         </div>
